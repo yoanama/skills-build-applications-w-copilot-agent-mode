@@ -3,6 +3,9 @@ import { Activity, Leaderboard, Team, User, Workout } from '../models/index.js';
 
 const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/octofit_db';
 
+/**
+ * Seed the octofit_db database with test data
+ */
 async function seedDatabase() {
   try {
     await mongoose.connect(connectionString);
